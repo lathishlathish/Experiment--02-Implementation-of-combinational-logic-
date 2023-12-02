@@ -48,17 +48,17 @@ The NOT gate is a fundamental digital logic gate. It has a single input and a si
    - Give the Input Combinations according to the Truth Table amd then simulate the Output Waveform.
 ## Program:
 ```
-module exp2(A,B,C,D,F1);
-input A,B,C,D;
+module exp2(x,y,z,F1);
+input x,y,z;
 output F1;
-wire x1,x2,x3,x4,x5;
-assign x1=(~A)&(~B)&(~C)&(~D);
-assign x2= (A)&(~C)&(~D);
-assign x3= (~B)&(C)&(~D);
-assign x4=(~A)&(B)&(C)&(D);
-assign x5=(B)&(~C)&(D);
-assign F1=x1|x2|x3|x4|x5;
-endmodule 
+wire a1,a2,a3,a4,a5;
+assign a1=(~A)&(~B)&(~C)&(~D);
+assign a2= (A)&(~C)&(~D);
+assign a3= (~B)&(C)&(~D);
+assign a4=(~A)&(B)&(C)&(D);
+assign a5=(B)&(~C)&(D);
+assign F1=a1|a2|a3|a4|a5;
+endmodule
 ```
 ## RTL Diagram:
 ![Screenshot 2023-08-25 083514](https://github.com/Vanitha-SM/Experiment--02-Implementation-of-combinational-logic-/assets/119557985/f84decd1-98fe-47bf-b0e7-30791732fc00)
